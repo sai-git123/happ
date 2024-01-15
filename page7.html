@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/////Birthday\\\\\</title>
+    <link rel="icon" type="image/x-icon" href="">
+</head>
+<style>
+    
+    *{
+        animation: fadeInUp 1s ease-in-out;
+    }
+    body{
+        background-image:url('https://images.pexels.com/photos/1303085/pexels-photo-1303085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-repeat: none;
+        background-attachment: scroll;
+        background-size: cover;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .question
+    {
+        padding-left: 600px;
+        padding-bottom: 100px;
+        padding-right: 400px;
+        border: none;
+        
+    }
+ 
+    
+    .question input{
+        padding: 20px 40px 20px 40px;
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive;
+        color: rgb(45, 17, 17);
+        transition: 0.3s;
+        border: none;
+        border-radius: 30px;
+    }
+   
+    button
+    {
+        text-align: center;
+        padding: 15px 35px 15px 35px;
+        margin-left: 760px;
+        background-color: rgb(164, 165, 216);
+        font-size: 20px;
+        transition: 0.3s;
+        border: none;
+        border-radius: 30px;
+    }
+    button:hover
+    {
+        background-color: rgb(9, 3, 43);
+        color: beige;
+        transform: scale(1.2);
+        border: none;
+        
+    }
+    .caption
+    {
+        color: beige;
+        font-size: 24px;
+      padding: 70px 70px 90px 30px;
+        border: none;
+        margin-left: 130px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+
+    }
+    @keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+   
+</style>
+<body>
+    <div class="caption">
+      <h1>Decode the following and get the final passcode</h1>
+      <h4>Q11TH-Q17TH-Q31TH-Q44TH-Q53TH-Q35TH</h4>
+    </div>
+    <div class="question">
+      
+        <input type="text" id="ans" placeholder="GUESS THE FINAL PASSCODE!">
+    </div>
+    <div class="button1">
+       <button class="button1.1" onclick="checkPassword()">GO</button>
+    </div>
+<script>
+    function checkPassword()
+     {
+    var password = document.getElementById('ans').value;
+
+  
+    if ((password === 'kakashi')||(password === 'KAKASHI')||(password === 'Kakashi')) 
+    {
+        window.location.href = 'page8.html';
+    } 
+    else
+    {
+        alert('Incorrect passcode. Guess it again!');
+    }
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/////Birthday\\\\\</title>
+    <link rel="icon" type="image/x-icon" href="">
+</head>
+<style>
+    *
+    {
+        animation: fadeInUp 3s ease-in-out;
+    }
+   
+    body{
+        background-image:url('https://images.pexels.com/photos/1303085/pexels-photo-1303085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-repeat: none;
+        background-attachment: scroll;
+        background-size: cover;
+       
+    }
+    @keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.content{
+text-align: center;
+margin-top: 0px;
+margin-left: 250px;
+padding: 10px 50px 20px 0px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 40px;
+color: beige;
+}
+
+.question
+    {
+        padding-left: 600px;
+        padding-bottom: 100px;
+        padding-right: 400px;
+        border: none;
+        
+    }
+    
+    .question input{
+        padding: 20px 40px 20px 40px;
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive;
+        color: rgb(45, 17, 17);
+        transition: 0.3s;
+        border: none;
+        border-radius: 30px;
+       
+    }
+   
+    button
+    {
+        text-align: center;
+        padding: 15px 35px 15px 35px;
+        margin-left: 800px;
+        background-color: rgb(164, 165, 216);
+        font-size: 20px;
+        transition: 0.3s;
+        border: none;
+        border-radius: 30px;
+        animation: fadeInUp 2s ease-in-out;
+        margin-bottom: 80px;
+    }
+    button:hover
+    {
+        background-color: rgb(9, 3, 43);
+        color: beige;
+        transform: scale(1.2);
+        border: none;
+        
+    }
+    .sentence2
+    {
+        padding-left: 40px;
+    }
+
+</style>
+<body>
+<div class="content">
+    <div class="sentence1"><h1>Question 4</h1></div>
+    <div class="image1"><img src="https://images4.alphacoders.com/135/135644.jpg" height="300px" width="400px"></div>
+    <div class="sentence2"><p>Guess whose mangekyou Sharingan matches the above </p></div>
+</div>
+<div class="question"> 
+    <input type="text" id="ans" placeholder="GUESS THE PASSCODE4!">
+</div>
+<div class="button1">
+   <button class="button1.1" onclick="checkPassword()">GO</button>
+</div>
+<script>
+function checkPassword()
+{
+var password = document.getElementById('ans').value;
+
+
+if ((password === 'kakashi')||(password === 'KAKASHI')||(password === 'Kakashi')||(password === 'obito')||(password === 'OBITO')||(password === 'Obito')) 
+{
+   window.location.href = 'page6.html';
+} 
+else
+{
+   alert('Incorrect passcode. Guess it again!');
+}
+}
+</script>
+
+</body>
+</html>
